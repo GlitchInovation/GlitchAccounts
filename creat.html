@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header id="main">
+        
+           <section class="creatCard">
+                
+                <div class="cPage">
+                    <section class="logo">
+                        <div class="img">
+                            <img src="letter-g.png" alt="letter g" class="G">
+                            <img src="a.png" alt="letter a" class="A">
+                        </div>
+                    </section>
+                    <div class="form">
+                        <form action="creat.html" method="post">
+                            <input type="text" name = "userName" placeholder="USER NAME" required>
+                            <input type="password" name = "password" placeholder="PASSWOED"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                            <input type="password" name = "confomPass" placeholder="CONFORM PASSWORD" required>     
+                            <input type="submit">
+                        </form>
+                    </div>
+                    
+                </div>
+           </section>
+        <section class="navD"> 
+            <div class="navFotter">
+                <button class="login" onclick="myFunction()">Login</button>
+                <button class="creat" onclick = "myFunction()">Creat Account</button>
+            </div>
+        </section>
+    </header>
+
+    <script src="creat.js"></script>
+</body>
+</html>
